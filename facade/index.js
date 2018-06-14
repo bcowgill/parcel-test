@@ -1,2 +1,2 @@
-export * from './facade.jsx';
-export { default } from './facade.jsx';
+export * from './facade';
+export { default } from './facade';

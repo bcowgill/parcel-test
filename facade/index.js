@@ -1,2 +1,3 @@
-export * from './facade';
-export { default } from './facade';
+const thing = 'THING';
+export default thing;
+export const that = 'THAT';

@@ -1,0 +1,29 @@
+{
+  "name": "parcel-test",
+  "version": "1.0.0",
+  "description": "A test of the parcel bundler for browser and node using pnpm package manager",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist/ dist-dev/ dist-node/",
+    "prestart": "rimraf dist-dev/",
+    "start": "parcel index.html -d dist-dev/",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prenode": "rimraf dist-node/",
+    "node": "parcel build index.js -d dist-node/ --detailed-report --log-level 3 --target node --no-minify && node dist-node/index.js",
+    "debug": "parcel build index.js -d dist-node/ --target node --no-minify && node debug dist-node/index.js",
+    "prebuild": "rimraf dist/",
+    "build": "parcel build index.html"
+  },
+  "keywords": [
+    "parcel-bundler",
+    "pnpm",
+    "test"
+  ],
+  "author": "Brent S.A. Cowgill",
+  "license": "Unlicense",
+  "devDependencies": {
+    "node-sass": "^4.9.0",
+    "parcel-bundler": "^1.8.1",
+    "rimraf": "^2.6.2"
+  }
+}

@@ -1,4 +1,6 @@
 devDependencies:
+  '@vue/component-compiler-utils': 2.0.0
+  ansi-styles: 3.2.1
   babel-core: 6.26.3
   babel-preset-env: 1.7.0
   babel-preset-react: 6.24.1
@@ -10,7 +12,24 @@ devDependencies:
   react: 16.4.1
   react-dom: 16.4.1
   rimraf: 2.6.2
+  vue: 2.5.16
+  vue-hot-reload-api: 2.3.0
+  vue-template-compiler: 2.5.16
 packages:
+  /@vue/component-compiler-utils/2.0.0:
+    dependencies:
+      consolidate: 0.15.1
+      hash-sum: 1.0.2
+      lru-cache: 4.1.3
+      merge-source-map: 1.1.0
+      postcss: 6.0.22
+      postcss-selector-parser: 3.1.1
+      prettier: 1.13.5
+      source-map: 0.5.7
+      vue-template-es2015-compiler: 1.6.0
+    dev: true
+    resolution:
+      integrity: sha512-ofTcVvSbfMwgiVofBiOZb9pgi8iNXdUD5YbI/uDuuRIs1mSTuYV0SR5o60UO893TPJPWaVYtWE5/SkKjfzMTLg==
   /abbrev/1.1.1:
     dev: true
     resolution:
@@ -1239,6 +1258,14 @@ packages:
     dev: true
     resolution:
       integrity: sha1-PXz0Rk22RG6mRL9LOVB/mFEAjo4=
+  /consolidate/0.15.1:
+    dependencies:
+      bluebird: 3.5.1
+    dev: true
+    engines:
+      node: '>= 0.10.0'
+    resolution:
+      integrity: sha512-DW46nrsMJgy9kqAbPt5rKaCr7uFtpo4mSUvLHIUbJEjm0vo+aY5QLwBUq3FK4tRnJr/X0Psc0C4jf/h+HtXSMw==
   /constants-browserify/1.0.0:
     dev: true
     resolution:
@@ -1453,6 +1480,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-6vQ5/U1ISK105cx9vvIAZyueNFs=
+  /de-indent/1.0.2:
+    dev: true
+    resolution:
+      integrity: sha1-sgOOhG3DO6pXlhKNCAS0VbjB4h0=
   /deasync/0.1.13:
     dependencies:
       bindings: 1.2.1
@@ -1608,6 +1639,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-Lgd2XcJ/NjEw+7tFvfKxOzCYKZsdct5lczQ2ZaQY8Djz7pfAD3Gbp8ySJWtreII/vDlMVmxwa6pHmdxIYgttDg==
+  /dot-prop/4.2.0:
+    dependencies:
+      is-obj: 1.0.1
+    dev: true
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha512-tUMXrxlExSW6U2EXiiKGSBVdYgtV8qlHL+C10TsW4PURY/ic+eaysnSkwB4kA/mBlCyy/IKDJ+Lc3wbWeaXtuQ==
   /dotenv/5.0.1:
     dev: true
     engines:
@@ -2198,6 +2237,10 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-X8hoaEfs1zSZQDMZprCj8/auSRg=
+  /hash-sum/1.0.2:
+    dev: true
+    resolution:
+      integrity: sha1-M7QHd3VMZDJXPBIMw4CLvRDUfwQ=
   /hash.js/1.1.4:
     dependencies:
       inherits: 2.0.3
@@ -2216,6 +2259,10 @@ packages:
       node: '>=0.10.32'
     resolution:
       integrity: sha1-B4REvXwWQLD+VA0sm3PVlnjo4cQ=
+  /he/1.1.1:
+    dev: true
+    resolution:
+      integrity: sha1-k0EP0hsAlzUVH4howvJx80J+I/0=
   /hmac-drbg/1.0.1:
     dependencies:
       hash.js: 1.1.4
@@ -2540,6 +2587,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-rSklcAIlf1OmFdyAqbnWTLVelsQ58uvZ66S/ZyawjWqIviTWCjg2PzVGw8WUA+nNuPTqb4wgA+NszrJ+08LlgQ==
+  /is-obj/1.0.1:
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-PkcprB9f3gJc19g6iW2rn09n2w8=
   /is-odd/2.0.0:
     dependencies:
       is-number: 4.0.0
@@ -2928,6 +2981,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-pd5GU42uhNQRTMXqArR3KmNGcB8=
+  /merge-source-map/1.1.0:
+    dependencies:
+      source-map: 0.6.1
+    dev: true
+    resolution:
+      integrity: sha512-Qkcp7P2ygktpMPh2mCQZaf3jhN6D3Z/qVZHSdWvQ+2Ef5HgRAPBO57A77+ENm0CPx2+1Ce/MYKi3ymqdfuqibw==
   /micromatch/3.1.10:
     dependencies:
       arr-diff: 4.0.0
@@ -3681,6 +3740,16 @@ packages:
     dev: true
     resolution:
       integrity: sha1-+UN3iGBsPJrO4W/+jYsWKX8nu5A=
+  /postcss-selector-parser/3.1.1:
+    dependencies:
+      dot-prop: 4.2.0
+      indexes-of: 1.0.1
+      uniq: 1.0.1
+    dev: true
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha1-T4dfSvsMllc9XPTXQBGu4lCn6GU=
   /postcss-svgo/2.1.6:
     dependencies:
       is-svg: 2.1.0
@@ -3772,6 +3841,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-1PRWKwzjaW5BrFLQ4ALlemNdxtw=
+  /prettier/1.13.5:
+    dev: true
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha512-4M90mfvLz6yRf2Dhzd+xPIE6b4xkI8nHMJhsSm9IlfG17g6wujrrm7+H1X8x52tC4cSNm6HmuhCUSNe6Hd5wfw==
   /private/0.1.8:
     dev: true
     engines:
@@ -4928,6 +5003,25 @@ packages:
     dev: true
     resolution:
       integrity: sha1-XX6kW7755Kb/ZflUOOCofDV9WnM=
+  /vue-hot-reload-api/2.3.0:
+    dev: true
+    resolution:
+      integrity: sha512-2j/t+wIbyVMP5NvctQoSUvLkYKoWAAk2QlQiilrM2a6/ulzFgdcLUJfTvs4XQ/3eZhHiBmmEojbjmM4AzZj8JA==
+  /vue-template-compiler/2.5.16:
+    dependencies:
+      de-indent: 1.0.2
+      he: 1.1.1
+    dev: true
+    resolution:
+      integrity: sha512-ZbuhCcF/hTYmldoUOVcu2fcbeSAZnfzwDskGduOrnjBiIWHgELAd+R8nAtX80aZkceWDKGQ6N9/0/EUpt+l22A==
+  /vue-template-es2015-compiler/1.6.0:
+    dev: true
+    resolution:
+      integrity: sha512-x3LV3wdmmERhVCYy3quqA57NJW7F3i6faas++pJQWtknWT+n7k30F4TVdHvCLn48peTJFRvCpxs3UuFPqgeELg==
+  /vue/2.5.16:
+    dev: true
+    resolution:
+      integrity: sha512-/ffmsiVuPC8PsWcFkZngdpas19ABm5mh2wA7iDqcltyCTwlgZjHGeJYOXkBMo422iPwIcviOtrTCUpSfXmToLQ==
   /whatwg-fetch/2.0.4:
     dev: true
     resolution:
@@ -5019,6 +5113,8 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 7
 shrinkwrapVersion: 3
 specifiers:
+  '@vue/component-compiler-utils': ^2.0.0
+  ansi-styles: ^3.2.1
   babel-core: ^6.26.3
   babel-preset-env: ^1.7.0
   babel-preset-react: ^6.24.1
@@ -5030,3 +5126,6 @@ specifiers:
   react: ^16.4.1
   react-dom: ^16.4.1
   rimraf: ^2.6.2
+  vue: ^2.5.16
+  vue-hot-reload-api: ^2.3.0
+  vue-template-compiler: ^2.5.16

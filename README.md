@@ -23,4 +23,29 @@ echo '{ "presets": [ "env", "react" ] }' > .babelrc
 + react-dom 16.4.1
 
 # for vue
-pnpm install --save-dev vue vue-template-compiler
+pnpm install --save-dev vue vue-template-compiler vue-hot-reload-api ansi-styles@3.2.1 @vue/component-compiler-utils
++ @vue/component-compiler-utils 2.0.0
++ vue 2.5.16
++ vue-hot-reload-api 2.3.0
++ vue-template-compiler 2.5.16
++ ansi-styles 3.2.1
+
+all the packages from pnpm
++ @vue/component-compiler-utils 2.0.0
++ ansi-styles 3.2.1
++ babel-core 6.26.3
++ babel-preset-env 1.7.0
++ babel-preset-react 6.24.1
++ fbjs 0.8.17
++ node-sass 4.9.0
++ object-assign 4.1.1
++ parcel-bundler 1.9.1
++ prop-types 15.6.1
++ react 16.4.1
++ react-dom 16.4.1
++ rimraf 2.6.2
++ vue 2.5.16
++ vue-hot-reload-api 2.3.0
++ vue-template-compiler 2.5.16
+
+Might be a bit easier to use yarn as parcel installs packages with yarn.

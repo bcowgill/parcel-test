@@ -7,12 +7,15 @@
     "clean": "rimraf dist/ dist-dev/ dist-node/",
     "prestart": "rimraf dist-dev/",
     "start": "parcel index.html -d dist-dev/",
+    "start:react": "parcel react.html -d dist-dev/",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prenode": "rimraf dist-node/",
     "node": "parcel build index.js -d dist-node/ --detailed-report --log-level 3 --target node --no-minify && node dist-node/index.js",
     "debug": "parcel build index.js -d dist-node/ --target node --no-minify && node debug dist-node/index.js",
     "prebuild": "rimraf dist/",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "prebuild:react": "rimraf dist/",
+    "build:react": "parcel build react.html"
   },
   "keywords": [
     "parcel-bundler",
@@ -25,5 +28,11 @@
     "node-sass": "^4.9.0",
     "parcel-bundler": "^1.8.1",
     "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
   }
 }

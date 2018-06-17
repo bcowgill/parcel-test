@@ -49,3 +49,8 @@ all the packages from pnpm
 + vue-template-compiler 2.5.16
 
 Might be a bit easier to use yarn as parcel installs packages with yarn.
+yarn add --dev  parcel-bundler rimraf node-sass
+(remove .babelrc)
+
+React
+yarn add --dev react react-dom babel-preset-env babel-preset-react

@@ -25,14 +25,12 @@
   "author": "Brent S.A. Cowgill",
   "license": "Unlicense",
   "devDependencies": {
-    "node-sass": "^4.9.0",
-    "parcel-bundler": "^1.8.1",
-    "rimraf": "^2.6.2"
-  },
-  "dependencies": {
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "node-sass": "^4.9.0",
+    "parcel-bundler": "^1.8.1",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "rimraf": "^2.6.2"
   }
 }

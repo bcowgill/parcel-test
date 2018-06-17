@@ -3,7 +3,7 @@
    import ReactDOM from 'react-dom';
 
    const App = () => (
-	  <h1>Hello from React and parcel!</h1>
+	  <h1>Hello ALL from React and parcel!</h1>
    );
    App.displayName = 'App';
 

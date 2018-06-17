@@ -9,10 +9,12 @@
     "prestart:react": "rimraf dist-dev/",
     "prestart:vue": "rimraf dist-dev/",
     "prestart:typescript": "rimraf dist-dev/",
+    "prestart:all": "rimraf dist-dev/",
     "start": "parcel index.html -d dist-dev/",
     "start:react": "parcel react.html -d dist-dev/",
     "start:vue": "parcel vue.html -d dist-dev/",
     "start:typescript": "parcel typescript.html -d dist-dev/",
+    "start:all": "parcel combined.html -d dist-dev/",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prenode": "rimraf dist-node/",
     "node": "parcel build index.js -d dist-node/ --detailed-report --log-level 3 --target node --no-minify && node dist-node/index.js",
@@ -23,10 +25,12 @@
     "prebuild:react": "rimraf dist/",
     "prebuild:vue": "rimraf dist/",
     "prebuild:typescript": "rimraf dist/",
+    "prebuild:all": "rimraf dist/",
     "build": "parcel build index.html",
     "build:react": "parcel build react.html",
     "build:vue": "parcel build vue.html",
-    "build:typescript": "parcel build typescript.html"
+    "build:typescript": "parcel build typescript.html",
+    "build:all": "parcel build combined.html"
   },
   "keywords": [
     "parcel-bundler",

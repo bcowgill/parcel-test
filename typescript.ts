@@ -1,7 +1,5 @@
    import './styles.scss';
 
-   const framework = document.getElementById( 'tsapp' );
-
    interface Data
    {
 	  framework: string;
@@ -16,6 +14,12 @@
 	  };
    }
 
+const data = getData();
+
+if (typeof document !== 'undefined') {
+
+   const framework = document.getElementById( 'tsapp' );
+
    window.addEventListener(
 	  'load',
 	  () =>
@@ -23,6 +27,8 @@
 		 framework.style.color = '#ff3e96';
 		 framework.style.fontSize = '2rem';
 		 framework.style.fontWeight = 'bold';
-		 const data = getData();
 		 framework.innerHTML = `Hello from ${data.framework} and ${data.packager}!`;
 	  } );
+}
+
+console.log(`Hello from ${data.framework} and ${data.packager}!`);

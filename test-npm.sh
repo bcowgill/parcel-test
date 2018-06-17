@@ -5,6 +5,8 @@ pnpm run debug
 pnpm run build:react
 pnpm run build:vue
 pnpm run build:typescript
+pnpm run node:typescript
+pnpm run debug:typescript
 
 # manual tests:
 pnpm run start:typescript

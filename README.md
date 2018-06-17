@@ -1,6 +1,10 @@
 Testing the parcel bundler for plan js, node, react, etc
 https://medium.freecodecamp.org/all-you-need-to-know-about-parcel-dbe151b70082
 
+To use with yarn, remove shrinkwrap.yml and cp package.yarn.json to package.json then yarn install should use yarn.lock to set up your node_modules.
+
+To use with pnpm remove yarn.lock and pnpm install should use package.json and shrinkwrap.yml files to set up your node_modules.
+
 # does not work well with node v6.x
 nvm use 8.6.0
 git init
@@ -49,8 +53,16 @@ all the packages from pnpm
 + vue-template-compiler 2.5.16
 
 Might be a bit easier to use yarn as parcel installs packages with yarn.
+
+Parcel
 yarn add --dev  parcel-bundler rimraf node-sass
 (remove .babelrc)
 
 React
 yarn add --dev react react-dom babel-preset-env babel-preset-react
+running parcel will cause yarn to install some more packages
+
+Vue
+yarn add --dev vue
+after running parcel and yarn tries to add packages,
+run yarn install again to fix deps before trying again.

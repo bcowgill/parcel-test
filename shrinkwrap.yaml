@@ -12,6 +12,7 @@ devDependencies:
   react: 16.4.1
   react-dom: 16.4.1
   rimraf: 2.6.2
+  typescript: 2.9.2
   vue: 2.5.16
   vue-hot-reload-api: 2.3.0
   vue-template-compiler: 2.5.16
@@ -4864,6 +4865,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+  /typescript/2.9.2:
+    dev: true
+    engines:
+      node: '>=4.2.0'
+    resolution:
+      integrity: sha512-Gr4p6nFNaoufRIY4NMdpQRNmgxVIGMs4Fcu/ujdYk3nAZqk7supzBE9idmvfZIlH/Cuj//dvi+019qEue9lV0w==
   /ua-parser-js/0.7.18:
     dev: true
     resolution:
@@ -5121,11 +5128,12 @@ specifiers:
   fbjs: ^0.8.17
   node-sass: ^4.9.0
   object-assign: ^4.1.1
-  parcel-bundler: ^1.8.1
+  parcel-bundler: ^1.9.1
   prop-types: ^15.6.1
   react: ^16.4.1
   react-dom: ^16.4.1
   rimraf: ^2.6.2
+  typescript: ^2.9.2
   vue: ^2.5.16
   vue-hot-reload-api: ^2.3.0
   vue-template-compiler: ^2.5.16

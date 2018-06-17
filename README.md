@@ -34,6 +34,11 @@ pnpm install --save-dev vue vue-template-compiler vue-hot-reload-api ansi-styles
 + vue-template-compiler 2.5.16
 + ansi-styles 3.2.1
 
+# for typescript
+pnpm install --savea-dev typescript
++ typescript 2.9.2
+
+
 all the packages from pnpm
 + @vue/component-compiler-utils 2.0.0
 + ansi-styles 3.2.1
@@ -48,6 +53,7 @@ all the packages from pnpm
 + react 16.4.1
 + react-dom 16.4.1
 + rimraf 2.6.2
++ typescript 2.9.2
 + vue 2.5.16
 + vue-hot-reload-api 2.3.0
 + vue-template-compiler 2.5.16

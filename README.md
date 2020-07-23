@@ -128,6 +128,12 @@ yarn add --dev typescript
 		+ imports facade/index.js
 			+ imports facade/facade.js
 
++ typescript.html
+	+ imports typescript.ts
+		+ imports styles.scss
+		+ imports facade/index.js
+			+ imports facade/facade.js
+
 + react.html
 	+ imports react.jsx
 		+ imports styles.scss
@@ -138,12 +144,6 @@ yarn add --dev typescript
 	+ imports vue.js
 		+ imports styles.scss
 		+ imports ./app.vue
-		+ imports facade/index.js
-			+ imports facade/facade.js
-
-+ typescript.html
-	+ imports typescript.ts
-		+ imports styles.scss
 		+ imports facade/index.js
 			+ imports facade/facade.js
 
@@ -159,26 +159,26 @@ yarn add --dev typescript
 ```
 pnpm run node
 ```
-  builds from index.js and puts it in dist-node/ and runs it with node
+  builds from `index.js` and puts it in `dist-node/` and runs it with `node`
 
 ```
 pnpm run debug
 ```
-  builds from index.js and puts it in dist-node/ and runs it with node debugger
-  open chrome://inspect to debug using dev tools
++ builds from `index.js` and puts it in `dist-node/` and runs it with `node` debugger
++  open `chrome://inspect` to debug using dev tools
 
 #### typescript
 
 ```
 pnpm run node:typescript
 ```
-  builds from typescript.ts and puts it in dist-node/ and runs it with node
++  builds from `typescript.ts` and puts it in `dist-node/` and runs it with `node`
 
 ```
 pnpm run debug:typescript
 ```
-  builds from typescript.ts and puts it in dist-node/ and runs it with node debugger
-  open chrome://inspect to debug using dev tools
++  builds from `typescript.ts` and puts it in `dist-node/` and runs it with `node` debugger
++  open `chrome://inspect` to debug using dev tools
 
 
 ### Browser npm run targets
@@ -189,35 +189,35 @@ pnpm run debug:typescript
 nvm use
 pnpm run start
 ```
-  builds from index.html index.js and puts it in dist-dev/ and runs a server
-  http://localhost:1234/
-  builds a stylesheet from the scss file
-  bundles a js file from all the imports and makes it runnable in browser.
-  can also run in node using node dist-dev/*.js
++  builds from `index.html index.js` and puts it in `dist-dev` and runs a server
++  http://localhost:1234/
++  builds a stylesheet from the scss file
++  bundles a js file from all the imports and makes it runnable in browser.
++  can also run in `node` using `node dist-dev/*.js`
 
 
 ```
 pnpm run build
 ```
-  builds production version from index.html and puts it in dist/index.html
-  need to run a webserver from that directory
++  builds production version from `index.html` and puts it in `dist/index.html`
++  need to run a webserver from that directory
 
 #### typescript
 
 ```
 pnpm run start:typescript
 ```
-  builds from typescript.html typescript.ts and puts it in dist-dev/ and runs a server
-  http://localhost:1234/
-  builds a stylesheet from the scss file
-  bundles a js file from all the imports and makes it runnable in browser.
-  can also run in node using node dist-dev/*.js
++  builds from `typescript.html typescript.ts` and puts it in `dist-dev/` and runs a server
++  http://localhost:1234/
++  builds a stylesheet from the scss file
++  bundles a js file from all the imports and makes it runnable in browser.
++  can also run in `node` using `node dist-dev/*.js`
 
 ```
 pnpm run build:typescript
 ```
-  builds production version from typescript.html and puts it in dist/index.html
-  need to run a webserver from that directory
++  builds production version from `typescript.html` and puts it in `dist/index.html`
++  need to run a webserver from that directory
 
 
 #### react
@@ -225,48 +225,48 @@ pnpm run build:typescript
 ```
 pnpm run start:react
 ```
-  builds from index.html index.js and puts it in dist-dev/ and runs a server
-  http://localhost:1234/
-  builds a stylesheet from the scss file
-  bundles a js file from all the imports and makes it runnable in browser.
-  experienced some import/export problem using parcel-bundler 1.9.1 and react 16.4.1
++  builds from `index.html index.js` and puts it in `dist-dev/` and runs a server
++  http://localhost:1234/
++  builds a stylesheet from the scss file
++  bundles a js file from all the imports and makes it runnable in browser.
++  experienced some import/export problem using `parcel-bundler 1.9.1` and `react 16.4.1`
 
 ```
 pnpm run build:react
 ```
-  builds production version from react.html and puts it in dist/index.html
-  need to run a webserver from that directory
++  builds production version from `react.html` and puts it in `dist/index.html`
++  need to run a webserver from that directory
 
 #### vue
 
 ```
 pnpm run start:vue
 ```
-  builds from vue.html vue.js app.vue and puts it in dist-dev/ and runs a server
-  http://localhost:1234/
-  builds a stylesheet from the scss file
-  bundles a js file from all the imports and makes it runnable in browser.
++  builds from `vue.html vue.js app.vue` and puts it in `dist-dev/` and runs a server
++  http://localhost:1234/
++  builds a stylesheet from the scss file
++  bundles a js file from all the imports and makes it runnable in browser.
 
 ```
 pnpm run build:vue
 ```
-  builds production version from vue.html and puts it in dist/index.html
-  need to run a webserver from that directory
++  builds production version from `vue.html` and puts it in `dist/index.html`
++  need to run a webserver from that directory
 
 #### combined
 
 ```
 pnpm run start:all
 ```
-  builds from combined.html and puts it in dist-dev/ and runs a server
-  http://localhost:1234/
-  builds a stylesheet from the scss file
-  bundles a js file from all the imports and makes it runnable in browser.
-  runs react, vue and typescript UI in same browser
++  builds from `combined.html` and puts it in `dist-dev/` and runs a server
++  http://localhost:1234/
++  builds a stylesheet from the scss file
++  bundles a js file from all the imports and makes it runnable in browser.
++  runs react, vue and typescript UI in same browser
 
 ```
 pnpm run build:all
 ```
-  builds production version from combined.html and puts it in dist/index.html
-  need to run a webserver from that directory
++  builds production version from `combined.html` and puts it in `dist/index.html`
++  need to run a webserver from that directory
 

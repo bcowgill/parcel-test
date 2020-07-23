@@ -1,11 +1,22 @@
-Testing the parcel bundler for plain js, node, react, etc
-https://medium.freecodecamp.org/all-you-need-to-know-about-parcel-dbe151b70082
+# Testing the parcel bundler for plain js, node, typescript, react, vue
 
-To use with pnpm just pnpm install should use package.json and shrinkwrap.yml files to set up your node_modules.
+## Source Article
 
-To use with yarn, remove shrinkwrap.yml and cp yarn/package.json to package.json and yarn/yarn.lock to ./yarn.lock then yarn install should use yarn.lock to set up your node_modules.
+* https://medium.freecodecamp.org/all-you-need-to-know-about-parcel-dbe151b70082
 
-# does not work well with node v6.x
+## Node package installers
+
+### pnpm
+
+To use with `pnpm` just `pnpm install` should use `package.json` and `shrinkwrap.yml` files to set up your `node_modules`.
+
+### yarn
+
+To use with `yarn`, remove `shrinkwrap.yml` and `cp yarn/package.json package.json` and `cp yarn/yarn.lock ./yarn.lock` then `yarn install` should use `yarn.lock` to set up your `node_modules`.
+
+## Node
+
+### does not work well with node v6.x
 nvm use 8.6.0
 git init
 pnpm init
@@ -76,6 +87,7 @@ Typescript
 yarn add --dev typescript
 
 # How it works
+
 index.html
 	imports index.js
 		imports styles.scss
@@ -106,6 +118,7 @@ combined.html
 	imports react.jsx
 	imports typescript.ts
 
+## javascript
 nvm use
 pnpm run start
   builds from index.html index.js and puts it in dist-dev/ and runs a server
@@ -114,6 +127,7 @@ pnpm run start
   bundles a js file from all the imports and makes it runnable in browser.
   can also run in node using node dist-dev/*.js
 
+## react
 pnpm run start:react
   builds from index.html index.js and puts it in dist-dev/ and runs a server
   http://localhost:1234/
@@ -121,12 +135,14 @@ pnpm run start:react
   bundles a js file from all the imports and makes it runnable in browser.
   experienced some import/export problem using parcel-bundler 1.9.1 and react 16.4.1
 
+## vue
 pnpm run start:vue
   builds from vue.html vue.js app.vue and puts it in dist-dev/ and runs a server
   http://localhost:1234/
   builds a stylesheet from the scss file
   bundles a js file from all the imports and makes it runnable in browser.
 
+## typescript
 pnpm run start:typescript
   builds from typescript.html typescript.ts and puts it in dist-dev/ and runs a server
   http://localhost:1234/
@@ -134,6 +150,7 @@ pnpm run start:typescript
   bundles a js file from all the imports and makes it runnable in browser.
   can also run in node using node dist-dev/*.js
 
+## combined
 pnpm run start:all
   builds from combined.html and puts it in dist-dev/ and runs a server
   http://localhost:1234/

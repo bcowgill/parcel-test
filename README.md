@@ -17,17 +17,25 @@ To use with `yarn`, remove `shrinkwrap.yml` and `cp yarn/package.json package.js
 ## Node
 
 ### does not work well with node v6.x
+
+## How I installed
+
+```
 nvm use 8.6.0
 git init
 pnpm init
 pnpm install --save-dev parcel-bundler rimraf node-sass
+```
 + node-sass 4.9.0
 + parcel-bundler 1.9.1
 + rimraf 2.6.2
 
-# for react
+### for react
+
+```
 pnpm install --save-dev react react-dom fbjs prop-types object-assign babel-core babel-preset-env babel-preset-react
 echo '{ "presets": [ "env", "react" ] }' > .babelrc
+```
 + babel-core 6.26.3
 + babel-preset-env 1.7.0
 + babel-preset-react 6.24.1
@@ -37,19 +45,26 @@ echo '{ "presets": [ "env", "react" ] }' > .babelrc
 + react 16.4.1
 + react-dom 16.4.1
 
-# for vue
+### for vue
+
+```
 pnpm install --save-dev vue vue-template-compiler vue-hot-reload-api ansi-styles@3.2.1 @vue/component-compiler-utils
+```
 + @vue/component-compiler-utils 2.0.0
 + vue 2.5.16
 + vue-hot-reload-api 2.3.0
 + vue-template-compiler 2.5.16
 + ansi-styles 3.2.1
 
-# for typescript
+### for typescript
+
+```
 pnpm install --savea-dev typescript
+```
 + typescript 2.9.2
 
-all the packages from pnpm
+### all the packages from pnpm
+
 + @vue/component-compiler-utils 2.0.0
 + ansi-styles 3.2.1
 + babel-core 6.26.3
@@ -67,32 +82,51 @@ all the packages from pnpm
 + vue 2.5.16
 + vue-hot-reload-api 2.3.0
 + vue-template-compiler 2.5.16
+
+### Yarn
 
 Might be a bit easier to use yarn as parcel installs packages with yarn.
 
-Parcel
+#### Parcel
+
+```
 yarn add --dev  parcel-bundler rimraf node-sass
+```
 (remove .babelrc)
 
-React
+#### React
+
+```
 yarn add --dev react react-dom babel-preset-env babel-preset-react
-running parcel will cause yarn to install some more packages
+```
 
-Vue
+running `parcel` will cause `yarn` to install some more packages
+
+#### Vue
+
+```
 yarn add --dev vue
-after running parcel and yarn tries to add packages,
-run yarn install again to fix deps before trying again.
+```
 
-Typescript
+after running `parcel` and `yarn` tries to add packages,
+
+run `yarn install` again to fix deps before trying again.
+
+#### Typescript
+
+```
 yarn add --dev typescript
+```
 
-# How it works
+## How it works
 
-index.html
-	imports index.js
-		imports styles.scss
-		imports facade/index.js
-			imports facade/facade.js
+### Source files for testing
+
++ index.html
+	+ imports index.js
+		+ imports styles.scss
+		+ imports facade/index.js
+			+ imports facade/facade.js
 
 react.html
 	imports react.jsx

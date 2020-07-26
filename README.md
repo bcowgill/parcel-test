@@ -195,6 +195,15 @@ pnpm run start
 +  bundles a js file from all the imports and makes it runnable in browser.
 +  can also run in `node` using `node dist-dev/*.js`
 
+```
+nvm use
+pnpm run watch
+```
++  builds from `index.html index.js` and puts it in `dist-dev/index.html` and watches for changes to rebuild
++  need to run a webserver from that directory and will reload automatically when rebuilt
++  builds a stylesheet from the scss file
++  bundles a js file from all the imports and makes it runnable in browser.
++  can also run in `node` using `node dist-dev/*.js`
 
 ```
 pnpm run build
@@ -225,8 +234,17 @@ pnpm run build:typescript
 ```
 pnpm run start:react
 ```
-+  builds from `index.html index.js` and puts it in `dist-dev/` and runs a server
++  builds from `react.html react.jsx` and puts it in `dist-dev/` and runs a server
 +  http://localhost:1234/
++  builds a stylesheet from the scss file
++  bundles a js file from all the imports and makes it runnable in browser.
++  experienced some import/export problem using `parcel-bundler 1.9.1` and `react 16.4.1`
+
+```
+pnpm run watch:react
+```
++  builds from `react.html react.jsx` and puts it in `dist-dev/index.html` and watches for changes to rebuild
++  need to run a webserver from that directory and will reload automatically when rebuilt
 +  builds a stylesheet from the scss file
 +  bundles a js file from all the imports and makes it runnable in browser.
 +  experienced some import/export problem using `parcel-bundler 1.9.1` and `react 16.4.1`
@@ -244,6 +262,14 @@ pnpm run start:vue
 ```
 +  builds from `vue.html vue.js app.vue` and puts it in `dist-dev/` and runs a server
 +  http://localhost:1234/
++  builds a stylesheet from the scss file
++  bundles a js file from all the imports and makes it runnable in browser.
+
+```
+pnpm run watch:vue
+```
++  builds from `vue.html vue.js app.vue` and puts it in `dist-dev/index.html` and watches for changes to rebuild
++  need to run a webserver from that directory and will reload automatically when rebuilt
 +  builds a stylesheet from the scss file
 +  bundles a js file from all the imports and makes it runnable in browser.
 

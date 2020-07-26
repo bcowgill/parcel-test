@@ -7,17 +7,17 @@
    import { that } from './facade/facade';
 
    // importing like this blows up at run time...
-   // import thing from './facade';
-   // import { that } from './facade';
-   // import thing from './facade/index.js';
-   // import { that } from './facade/index.js';
+   //import thing from './facade';
+   //import { that } from './facade';
+   //import thing from './facade/index.js';
+   //import { that } from './facade/index.js';
 
    console.log(`react. The ${thing} is, I am ${that} guy!`);
 
    const App = () => (
       <div>
-        <h1>Hello ALL from React and parcel!</h1>
-        <p>The {thing} is, I am {that} guy!</p>
+        <h1 key="header">Hello ALL from React and parcel!</h1>
+        <p key="para">The {thing} is, I am {that} guy!</p>
       </div>
    );
    App.displayName = 'App';

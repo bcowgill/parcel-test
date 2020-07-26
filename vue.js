@@ -1,9 +1,10 @@
 import Vue from 'vue/dist/vue.js';
 import './styles.scss';
-import App from './app.vue';
-
 import thing from './facade';
 import { that } from './facade';
+
+// must come after import from facade
+import App from './app.vue';
 
 console.log(`vue. The ${thing} is, I am ${that} guy!`);
 

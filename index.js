@@ -12,6 +12,6 @@ console.log('thing', thing);
 console.log('that', that);
 
 if (typeof document !== 'undefined') {
-	document.write('saying hello from PARCEL packager ' + thing + that);
+	document.write('saying hello from PARCEL packager ' + thing + ' ' + that);
 }
 console.log('saying hello from PARCEL packager', styles);

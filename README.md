@@ -1,5 +1,9 @@
 # Testing the parcel bundler for plain js, node, typescript, react, vue
 
+## TODO
+
++ install latest version of parcel and evaluate again. regenerating dist-archive to see if kinks worked out / new features.
+
 ## Source Article
 
 * https://medium.freecodecamp.org/all-you-need-to-know-about-parcel-dbe151b70082
